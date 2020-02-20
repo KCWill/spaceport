@@ -9,26 +9,34 @@
 // Initialize two new variables, "name", and "age", and assign values to them with
 // your own name and age.
 
+var name = 'Kyle';
+var age = 29;
+
+
 // var name = "Your name";
 // var ...
 
 
 // Initialize a new variable "someThing", but leave it undefined
 
-
+var someThing;
 
 // Initialize a new variable "isHuman", and assign it to a boolean value of your
 // choice
 
+var isHuman = true;
 
 
 // Reassign (not initialize) your "age" variable from above. Use a built in math
 // operator to make your age half of what it currently is.
 
+age = age/2;
 
 
 // Create a variable named "greeting", and assign it to a greeting of your
 // choice. Your chosen greeting must make use of your "name" variable from above
+
+var greeting = `Hello, ${name}!`;
 
 
 
@@ -37,7 +45,7 @@
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-
+var isMinor = (age<18);
 
 
 //------------------------- Conditionals -------------------------//
@@ -46,6 +54,9 @@
 // Express the following in code: If the variable age is greater than 100 log
 // the statement 'Oh! So old!', otherwise, log the statement 'Still a spring
 // chicken!'
+var messages = ['Oh! So old!','Still a spring chicken!'];
+var greater = (age < 100)
+console.log(messages[greater]);
 
 
 
@@ -54,6 +65,11 @@
 // statement 'Well hello [name]'. In either case, the value stored in the name
 // variable should be included in the logged statement.
 
+var message2 = [`Hi there, ${name}`,`Well hello ${name}`]
+
+var truth = !name.length > 5;
+
+console.log(message2[truth]);
 
 
 
